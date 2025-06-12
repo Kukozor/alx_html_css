@@ -20,3 +20,112 @@ aside {
   flex: 1;
   overflow-y: auto;
 }
+
+/* styles.css - Custom Styling */
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+header a {
+  color: white !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+header a:hover {
+  color: #ffdd40 !important;
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: #ffdd40;
+  text-shadow: 0 0 10px rgba(255, 221, 64, 0.7);
+}
+
+article {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  padding: 30px;
+  margin: 15px;
+}
+
+aside {
+  background: #eef2f7;
+  border-left: 1px solid #e0e6ed;
+  padding: 25px;
+}
+
+footer {
+  background: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #3498db !important;
+}
+
+/* Article content styling */
+article h1 {
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+article h2 {
+  color: #2980b9;
+}
+
+article p {
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+article a {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+article blockquote {
+  border-left: 4px solid #3498db;
+  background: #f8f9fa;
+  padding: 15px 20px;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+/* Tweet styling */
+.tweet {
+  border: 1px solid #e1e8ed;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 15px 0;
+  background: white;
+  transition: transform 0.3s ease;
+}
+
+.tweet:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  article, aside {
+    margin: 10px 0;
+  }
+  
+  .logo {
+    font-size: 2rem;
+  }
+}
